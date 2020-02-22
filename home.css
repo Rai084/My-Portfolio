@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
-   @import url('https://fonts.googleapis.com/css?family=Lemonada|Lobster+Two|Montserrat|Roboto+Mono&display=swap');
-      
+@import url('https://fonts.googleapis.com/css?family=Lemonada|Lobster+Two|Montserrat|Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
    body {
       font-family: 'Nunito';
    }
@@ -103,11 +104,15 @@
 
 
   @media (min-width: 992px) {
+     /*Jumbotron*/
    .Jumbotron {
       margin-top: 20px;
    }
 
-     /*Jumbotron*/
+   .navbar-nav a {
+      font-family: 'Poppins';
+   }
+
    .image {
       width: 600px;
       height: 600px;
