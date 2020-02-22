@@ -42,7 +42,7 @@
   .name {
     font-size: 24px;
     text-transform: uppercase;
-    font-weight: bolder;
+    font-weight: 600;
     text-transform: uppercase;
   }
 
@@ -103,6 +103,10 @@
 
 
   @media (min-width: 992px) {
+   .Jumbotron {
+      margin-top: 20px;
+   }
+
      /*Jumbotron*/
    .image {
       width: 600px;
@@ -228,7 +232,7 @@
   }
 
   .data {
-     margin-top: 100px;
+     margin-top: 150px !important;
   }
   /* Akhir Jumbotron */
   }
@@ -304,8 +308,9 @@
       }
 
    .data {
-     margin-top: -200px;
+     margin-top: -150px;
    }
+   
    .caption2 {
       font-size: 15px;
       font-weight: 600;
