@@ -5,6 +5,10 @@
       font-family: 'Nunito';
    }
       /* Version Mobile */
+      .Jumbotron {
+         margin-top: 50px;
+      }
+
       .image {
          display: flex;
          justify-content: center;
@@ -152,7 +156,7 @@
       display: block;
       width: 25px;
       border-radius: 20px;
-      color: black;
+      color: #1641ff;
    }
 
    .icon i {
@@ -389,8 +393,8 @@
 
       .navbar-nav {
          /* margin-top: -5px; */
-         text-align: center   ;
-         background: blue;
+         text-align: center;
+         background-image: linear-gradient(120deg, #b721ff 0%, #1641ff 100%);
          color: #fff !important;
          font-weight: 400;
          border-radius: 4px;
@@ -407,6 +411,18 @@
         /* padding-bottom: 5px; */
         /* margin-bottom: -10px !important; */
       }
+
+   @media (min-width: 770px) and (max-width: 992px) {
+      .nav-link:hover::after {
+         content: '';
+         display: block;
+         width: 3%;
+         border-bottom: 2px dotted white;
+         margin: auto;
+         /* padding-bottom: 5px; */
+         /* margin-bottom: -8px; */
+       }
+   }   
 
    /* Version Desktop Navbar */
    @media (min-width: 992px) {
@@ -467,15 +483,6 @@
          font-size: 25px;
          color: #fff !important;
       } */
-
-      svg {
-         z-index: -1;
-         width: 55%; 
-         position: absolute; 
-         z-index: 1; 
-         top: -130px; 
-         right: 0px;
-      }
    }    
   
 
