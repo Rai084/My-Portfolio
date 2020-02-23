@@ -13,6 +13,6 @@ const tl = gsap.timeline({default: {duration: 1}});
    .from('.anim1', 1, {y: -20, opacity: 0, stagger: .4, scaleY: -1},'-=2.5')
    .from('.anim2', {y: 20, opacity: 0, stagger: .4, scaleX: -1}, '-=3')
    .from('.nama', {y: 20, opacity: 0}, '-=2.5')
+   .from('button', {x: 20, opacity: 0}, '-=2.5')
    .from('.navbar-nav a', {opacity: 0, x: 20, stagger: .4, scaleY: -1}, '-=2')
    .from('.borderRight', {opacity: 0, width: 0, height: 0, duration: 1.2}, '-=4')
-
