@@ -11,7 +11,24 @@
     <script src="https://kit.fontawesome.com/101f283466.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="home.css">
     <title>Portfolio</title>
+    <style>
+      html {
+      overflow: scroll;
+   overflow-x: hidden;
+      }
+
+      ::-webkit-scrollbar {
+      width: 0px;  /* Remove scrollbar space */
+      background: transparent;  /* Optional: just make scrollbar invisible */
+   }
+   /* Optional: show position indicator in red */
+   ::-webkit-scrollbar-thumb {
+      background: #FF0000;
+   }
+
+    </style>
   </head>
+
   <body>
   
     <!-- Navbar -->
@@ -25,7 +42,7 @@
       
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
          <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link" href="#">Home</a>
+            <a class="nav-item nav-link " href="#">Home</a>
             <a class="nav-item nav-link" href="#">About</a>
             <a class="nav-item nav-link" href="#">Skills</a>
             <a class="nav-item nav-link" href="#">Service</a>
@@ -34,6 +51,19 @@
       </div>
       </nav>
     <!-- Akhir Navbar -->
+
+    <!-- loader -->
+    <!-- Loading -->
+    <div class="container" style="overflow: hidden;">
+      <div class="loader-wrapper">
+         <div class="kotak1"></div>
+         <div class="kotak2"></div>
+         <div class="kotak3"></div>
+         <div class="kotak4"></div>
+         <div class="kotak5"></div>
+      </div>
+    </div>
+    <!-- Akhir Loader -->
 
     <!-- Jumbotron -->
       <div class="container-fluid Jumbotron">
@@ -65,15 +95,50 @@
          </div>
       </div>
     <!-- Akhir Jumbotron -->
+      
+    <!-- About -->
+      <section id="about">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-6 col-md-12 col-sm-12">
+                  <div class="col-lg-12 col-md-12">
+                     <h1 class="who">Who am i ?</h1>
+                  <p class="caption3 text-justify"><span class="ml-2"></span> This is my first time making a portfolio, my feeling is very happy despite my knowledge in software engineering.
+                     still below the average person who is an expert but, I will learn more in this world of technology</p>
+                  </div>
 
-    <!-- Loading -->
-      <div class="loader-wrapper">
-         <div class="kotak1"></div>
-         <div class="kotak2"></div>
-         <div class="kotak3"></div>
-         <div class="kotak4"></div>
-         <div class="kotak5"></div>
-      </div>
+                  <div class="col-lg-12 col-md-12">
+                     <p class="caption3 text-justify"><span class="ml-2"></span>I am 16 years old, now I am in vocational high school student at 2 Jakarta, Indonesia I made this portfolio just to test my skills in coding. thanks for looking at my portfolio.</p>
+                     <a href="#" class="readMore">Read More</a>
+                  </div>
+               </div>
+   
+               <div class="col-lg-6 col-md-12 col-sm-12">
+                  <div class="hobby">
+                     <h1 class="tetx-center">My Hobby</h1>
+                   <div class="kotak6"></div>
+                   <div class="description">
+                     <i class="fas fa-music"></i>
+                     <p>Music</p>
+                   </div>
+       
+                   <div class="kotak7"></div>
+                   <div class="description2">
+                     <i class="fas fa-gamepad"></i>
+                     <p>Game</p>
+                   </div>
+       
+                   <div class="kotak8"></div>
+                   <div class="description3">
+                     <i class="fas fa-microphone-alt"></i>
+                     <p>Sing</p>
+                   </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+    <!-- Akhir About -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
