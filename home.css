@@ -4,14 +4,49 @@
 
    body {
       font-family: 'Nunito';
+      box-sizing: border-box;
+      /* overflow: hidden; */
    }
+
+   /* Loader */
+   .loader-wrapper {
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      background-image: linear-gradient(120deg, #b721ff 0%, #1641ff 100%);
+      z-index: 9999;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* overflow: hidden; */
+      overflow-y: hidden;
+   }
+
+   .kotak1, .kotak2, .kotak3, .kotak4, .kotak5 {
+      display: inline-block;
+      margin-right: 10px;
+      width: 10px;
+      height: 10px;
+      margin-top: -45px;
+      background: #fff;
+      border-radius: 20px;
+      overflow: hidden;
+   }
+
       /* Version Mobile */
       .Jumbotron {
          margin-top: 50px;
+         overflow: hidden;
       }
 
       nav {
          transform: translateY(-80px);
+         /* overflow: hidden; */
       }
 
       .image {
@@ -335,10 +370,7 @@
       body {
          font-family: 'Poppins', sans-serif;
       }
-
-   /* Version Mobile */
-
-
+   /* /* Version Mobile * */
    .navbar {
       background-image: linear-gradient(120deg, #b721ff 0%, #1641ff 100%);
       box-shadow: 0 0 5px #111;
@@ -369,7 +401,7 @@
       }
 
       button {
-         margin-top: -3px;
+         margin-top: -5px;
       }
 
       .icon-bar1, .icon-bar2, .icon-bar3 {
@@ -432,31 +464,7 @@
         /* margin-bottom: -10px !important; */
       }
 
-      .loader-wrapper {
-         width: 100%;
-         height: 100%;
-         position: fixed;
-         background-image: linear-gradient(120deg, #b721ff 0%, #1641ff 100%);
-         z-index: 9999;
-         top: 0;
-         left: 0;
-         bottom: 0;
-         right: 0;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-      }
-
-      .kotak1, .kotak2, .kotak3, .kotak4, .kotak5 {
-         display: inline-block;
-         margin-right: 10px;
-         width: 10px;
-         height: 10px;
-         margin-top: -45px;
-         background: #fff;
-         border-radius: 20px;
-         /* display: inline-block; */
-      }
+      
 
    @media (min-width: 770px) and (max-width: 992px) {
       .nav-link:hover::after {
@@ -510,7 +518,7 @@
 
       
 
-      /* .active{
+       .active{
          opacity: 1;
       }
 
@@ -525,7 +533,494 @@
          left: 860px;
          font-size: 25px;
          color: #fff !important;
-      } */
+      } 
    }    
   
+/* About */
+.who {
+  text-align: center;
+  margin-top: 50px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 30px;
+  color: #1641ff !important;
+  font-family: 'Nunito'; 
+}
 
+.who::after {
+  content: '';
+  width: 10%;
+  background-color: #1641ff;
+  display: block;
+  margin-top: 5px !important;
+  margin: auto;
+  border-bottom: 2px solid #1641ff;
+}
+
+.caption3 {
+  margin-top: 25px;
+  color: rgba(70, 67, 67, 0.884);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.hobby {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.hobby > h1 {
+  /* margin-left: 45px; */
+  font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  color: #1641ff;
+  text-transform: uppercase;
+}
+
+.hobby > h1::after {
+  content: '';
+  width: 10%;
+  background-color: #1641ff;
+  display: block;
+  margin: auto;
+  margin-top: 5px;
+  border-bottom: 2px solid #1641ff;
+}
+
+.readMore{
+  opacity: .9;
+  margin: auto;
+  display: block;
+  position: relative;
+  font-family: 'Nunito';
+  width: 25%;
+  margin-top: 1em;
+  padding: 5px 5px;
+  border-radius: 30px;
+  text-align: center;
+  border: 2px solid #1641ff;
+  color: #1641ff;
+  text-decoration: none !important;
+  font-weight: 600;
+  transition: all .3s ease;
+  box-shadow: -1px 14px 12px -12px rgb(198, 52, 228);
+}
+
+.readMore:hover {
+  background-color: #1641ff;
+  color: white;
+  transform: scale(1.2);
+}
+
+.kotak6 {
+  width: 90px;
+  height: 90px;
+  margin-top: 40px;
+  position: relative;
+  border: 4px solid #1641ff !important;
+  transform: rotate(45deg);
+  border-radius: 4px;
+  cursor: pointer;
+  left: 41%;
+  transition: all .6s ease;
+  -webkit-box-shadow: 0px 0px 18px -4px rgb(198, 52, 228);
+  -moz-box-shadow: 0px 0px 18px -4px rgb(198, 52, 228);
+  box-shadow: 0px 0px 18px -4px rgb(198, 52, 228);
+  animation: animateKotak 15s infinite forwards;
+}
+
+.description {
+  position: absolute;
+  display: inline-block; 
+  background: none;
+  top: 135px;
+  right: 0px;
+  left: 10px;
+  bottom: 0;
+  color: #1641ff;
+  font-weight: 600;   
+  cursor: pointer;
+}
+
+.description > .fas {
+  top: 10px;
+  position: relative;
+  left: -2px;
+  margin-bottom: 12px;
+}
+
+.description > p {
+  margin-top: 5px !important;
+}
+
+.kotak7 {
+  width: 90px;
+  height: 90px;
+  margin-top: -35px;
+  position: relative;
+  top: 85px;
+  left: 42%;
+  border: 4px solid #1641ff !important;
+  transform: rotate(45deg);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all .6s ease;
+  -webkit-box-shadow: 0px 0px 18px -4px rgb(198, 52, 228);
+  -moz-box-shadow: 0px 0px 18px -4px rgb(198, 52, 228);
+  box-shadow: 0px 0px 18px -4px rgb(198, 52, 228);
+  animation: animateKotak 20s infinite forwards;
+}
+
+.description2 {
+  position: relative;
+  display: inline-block; 
+  background: none;
+  top: 10px;
+  right: 0px;
+  left: 26px;
+  bottom: 0;
+  color: #1641ff;
+  font-weight: 600;   
+  cursor: pointer;
+}
+
+.description2 > .fas {
+   top: 10px;
+   position: relative;
+   left: 0px;
+   margin-bottom: 12px;
+}
+
+.description2 > p {
+  margin-top: 5px;
+}
+
+.kotak8 {
+  width: 90px;
+  height: 90px;
+  margin-top: -5px;
+  position: absolute;
+  left: 42%;
+  top: 405px;
+  border: 4px solid #1641ff !important;
+  transform: rotate(45deg);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all .6s ease;
+  -webkit-box-shadow: 0px 0px 18px -4px rgb(198, 52, 228);
+  -moz-box-shadow: 0px 0px 18px -4px rgb(198, 52, 228);
+  box-shadow: 0px 0px 18px -4px rgb(198, 52, 228);
+  animation: animateKotak 25s infinite forwards;
+}
+
+.description3 {
+  position: relative;
+  display: inline-block; 
+  background: none;
+  top: 140px;
+  right: 0px;
+  left: -22px;
+  bottom: 0;
+  color: #1641ff;
+  font-weight: 600;   
+  cursor: pointer;
+}
+
+.description3 > .fas {
+  top: 10px;
+  position: relative;
+  left: 0px;
+  margin-bottom: 12px;
+}
+
+.description3 > p {
+  margin-top: 5px;
+}
+
+
+@media (min-width: 992px) {
+   .who {
+      text-transform: uppercase;
+     font-weight: 900;
+     font-size: 30px;
+     color: #1641ff !important;
+     font-family: 'Nunito'; 
+  }
+  
+  .who::after {
+     content: '';
+     width: 15%;
+     background-color: #1641ff;
+     display: block;
+     margin-top: 10px;
+     border-bottom: 2px solid #1641ff;
+  }
+  
+  .caption3 {
+     margin-top: 25px;
+     color: rgba(70, 67, 67, 0.884);
+     font-weight: 500;
+     font-size: 16px;
+   }
+  
+   .hobby {
+     margin-left: 250px;
+   }
+  
+   .hobby > h1 {
+     /* margin-left: 45px; */
+     font-weight: 900;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 30px;
+     color: #1641ff;
+     text-transform: uppercase;
+   }
+  
+   .hobby > h1::after {
+     content: '';
+     width: 30%;
+     background-color: #1641ff;
+     display: block;
+     margin-top: 10px;
+     border-bottom: 2px solid #1641ff;
+   }
+  
+   .readMore{
+     opacity: .9;
+     margin: auto;
+     display: block;
+     position: relative;
+     font-family: 'Nunito';
+     width: 25%;
+     margin-top: 1em;
+     padding: 5px 5px;
+     border-radius: 30px;
+     text-align: center;
+     border: 2px solid #1641ff;
+     color: #1641ff;
+     text-decoration: none !important;
+     font-weight: 600;
+     transition: all .3s ease;
+     box-shadow: -1px 14px 12px -12px rgb(198, 52, 228);
+   }
+  
+   .readMore:hover {
+     background-color: #1641ff;
+     color: white;
+     transform: scale(1.2);
+   }
+  
+   .kotak6 {
+     width: 90px;
+     height: 90px;
+     margin-top: 40px;
+     position: absolute;
+     border: 4px solid #1641ff !important;
+     transform: rotate(45deg);
+     border-radius: 4px;
+     cursor: pointer;
+     left: 260px;
+     transition: all .6s ease;
+     -webkit-box-shadow: 0px 0px 18px -4px rgb(198, 52, 228);
+     -moz-box-shadow: 0px 0px 18px -4px rgb(198, 52, 228);
+     box-shadow: 0px 0px 18px -4px rgb(198, 52, 228);
+     animation: animateKotak 15s infinite forwards;
+   }
+  
+   .description {
+     position: relative;
+     display: inline-block; 
+     background: none;
+     top: 50px;
+     right: 0px;
+     left: -60px;
+     bottom: 0;
+     color: #1641ff;
+     font-weight: 600;   
+     cursor: pointer;
+   }
+  
+   .description > .fas {
+     top: 10px;
+     position: relative;
+     left: 0px;
+     margin-bottom: 12px;
+   }
+  
+   .description > p {
+     margin-top: 5px !important;
+   }
+  
+   .kotak7 {
+     width: 90px;
+     height: 90px;
+     margin-top: -35px;
+     position: absolute;
+     top: 170px;
+     left: 460px;
+     border: 4px solid #1641ff !important;
+     transform: rotate(45deg);
+     border-radius: 4px;
+     cursor: pointer;
+     transition: all .6s ease;
+     -webkit-box-shadow: 0px 0px 18px -4px rgb(198, 52, 228);
+     -moz-box-shadow: 0px 0px 18px -4px rgb(198, 52, 228);
+     box-shadow: 0px 0px 18px -4px rgb(198, 52, 228);
+     animation: animateKotak 20s infinite forwards;
+   }
+  
+   .description2 {
+     position: relative;
+     display: inline-block; 
+     background: none;
+     top: 50px;
+     right: 0px;
+     left: 90px;
+     bottom: 0;
+     color: #1641ff;
+     font-weight: 600;   
+     cursor: pointer;
+   }
+  
+   .description2 > .fas {
+     top: 10px;
+     position: relative;
+     left: 0px;
+     margin-bottom: 12px;
+   }
+  
+   .description2 > p {
+     margin-top: 5px;
+   }
+  
+   .kotak8 {
+     width: 90px;
+     height: 90px;
+     margin-top: -5px;
+     position: absolute;
+     left: 360px;
+     top: 250px;
+     border: 4px solid #1641ff !important;
+     transform: rotate(45deg);
+     border-radius: 4px;
+     cursor: pointer;
+     transition: all .6s ease;
+     -webkit-box-shadow: 0px 0px 18px -4px rgb(198, 52, 228);
+     -moz-box-shadow: 0px 0px 18px -4px rgb(198, 52, 228);
+     box-shadow: 0px 0px 18px -4px rgb(198, 52, 228);
+     animation: animateKotak 25s infinite forwards;
+   }
+  
+   .description3 {
+     position: relative;
+     display: inline-block; 
+     background: none;
+     top: 160px;
+     right: 0px;
+     left: -57px;
+     bottom: 0;
+     color: #1641ff;
+     font-weight: 600;   
+     cursor: pointer;
+   }
+  
+   .description3 > .fas {
+     top: 10px;
+     position: relative;
+     /* left: -px; */
+     margin-bottom: 12px;
+   }
+  
+   .description3 > p {
+     margin-top: 5px;
+   }
+}
+
+ @media (min-width: 770px) and (max-width: 992px) {
+    .who {
+       text-align: center;
+       margin-top: 100px !important;
+    }
+
+    .who::after {
+      margin: auto;
+      margin-top: 5px;
+      width: 50px;
+    }
+
+    .hobby {
+       margin-top: 50px !important;
+       text-align: center;
+       margin: auto;
+    }
+
+    .hobby > h1::after {
+      content: '';
+      width: 8%;
+      background-color: #1641ff;
+      display: block;
+      margin-top: 10px !important;
+      margin: auto;
+      border-bottom: 2px solid #1641ff;
+    }
+
+    .kotak6 {
+      left: 180px;
+    }
+
+    .description {
+       left: -90px;
+    }
+
+    .description > i {
+       top: 10px !important;
+       left: 0px !important;
+    }
+
+    .kotak7 {
+      top: 185px;
+      left: 440px;
+    }
+
+    .description2 {
+       left: 118px;
+    }
+
+    .description2 > i {
+       top: 10px !important;
+       left: 0px !important;
+    }
+
+    .kotak8 {
+      left: 305px;
+    }
+
+    .description3 {
+       left: -63px;
+       top: 145px !important;
+    }
+
+    .description3 > i {
+       top: 13px !important;
+       left: 2px !important;
+    }
+
+ }
+
+ @keyframes animateKotak {
+   0%{
+     transform: rotate(90deg);
+
+   }
+
+   50%{
+     transform: rotate(135deg);
+
+   }
+
+   100%{
+     transform: rotate(180deg);
+
+   }
+ }
